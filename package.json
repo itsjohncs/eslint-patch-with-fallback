@@ -1,32 +1,19 @@
 {
-  "name": "@rushstack/eslint-patch",
+  "name": "eslint-patch-with-fallback",
   "version": "1.1.4",
-  "description": "A patch that improves how ESLint loads plugins when working in a monorepo with a reusable toolchain",
+  "description": "A fork of eslint-patch that automatically uses the old behaviour if patch fails.",
   "main": "lib/usage.js",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/microsoft/rushstack.git",
-    "type": "git",
-    "directory": "eslint/eslint-patch"
+    "url": "https://github.com/itsjohncs/eslint-patch-with-fallback.git",
+    "type": "git"
   },
-  "homepage": "https://rushstack.io",
   "scripts": {
-    "build": "heft build --clean",
-    "_phase:build": "heft build --clean"
+    "build": "tsc"
   },
-  "keywords": [
-    "eslintrc",
-    "config",
-    "module",
-    "resolve",
-    "resolver",
-    "plugin",
-    "relative",
-    "package"
-  ],
+  "homepage": "https://github.com/itsjohncs/eslint-patch-with-fallback",
   "devDependencies": {
-    "@rushstack/heft": "0.45.14",
-    "@rushstack/heft-node-rig": "1.9.15",
-    "@types/node": "12.20.24"
+    "@types/node": "12.20.24",
+    "typescript": "^4.8.2"
   }
 }
